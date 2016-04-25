@@ -585,6 +585,7 @@ public class MainView extends javax.swing.JFrame
         this.laserCutterComboBox.setSelectedItem(ld);
       }
     }
+    ignoreLaserCutterComboBoxUpdates = false;
     //hide lasercutter combo box if only one lasercutter available
     if (this.laserCutterComboBox.getItemCount() == 1)
     {
@@ -597,7 +598,6 @@ public class MainView extends javax.swing.JFrame
       this.laserCutterComboBox.setVisible(true);
       this.jLabel9.setVisible(true);
     }
-    ignoreLaserCutterComboBoxUpdates = false;
   }
 
   /**
